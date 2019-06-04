@@ -4,3 +4,5 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/rajeevmc77/knowageReport.git
 git push -u origin master
+
+URL to be used  http://localhost/BroadBandRpt/report.html?schoolID=11075
