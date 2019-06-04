@@ -17,10 +17,11 @@ function htmlToElement(html) {
 }
 
 execTest2 = function() {
+    var schoolId = sessionStorage.getItem("schoolId");
     var html = Sbi.sdk.api.getDocumentHtml({
         documentLabel: 'BB_UA_DATA_TREND_RPT',
         executionRole: '/user',
-        parameters: { pSchoolId: 11075 },
+        parameters: { pSchoolId: schoolId },
         displayToolbar: false,
         canResetParameters: false,
         iframe: {

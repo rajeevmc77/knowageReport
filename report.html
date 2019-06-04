@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
 </head>
-<body>  
+<body>      
    
     <div id="knowageArea">
 
@@ -25,7 +25,11 @@
 
     <script src="./js/app/loadReport.js"></script>
     <script>
-         doLoginAndExecute();
+        var urlParams = new URLSearchParams(window.location.search);    
+        var schoolId =  urlParams.get('schoolID');
+        if(!schoolId)  schoolId = 11075;
+        sessionStorage.setItem("schoolId", schoolId);       
+        doLoginAndExecute();
     </script>
 </body>
 
